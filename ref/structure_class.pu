@@ -1,0 +1,68 @@
+@startuml
+
+!define Table(x) class x << (T,#FFAAAA) >>
+!define Indicator(x) class x << (I,#AAFFAA) >>
+!define Model(x) class x << (M,#AAAAFF) >>
+!define Component(x) class x << (C,#FFDDAA) >>
+!define AbstractModel(x) abstract class x << (A,#AAAAFF) >>
+
+Table(EconomicData)
+Table(ExchangeRates)
+
+Indicator(InflationRate)
+Indicator(InterestRate)
+Indicator(GDPGrowthRate)
+Indicator(TradeBalance)
+Indicator(PurchasingPowerParity)
+Indicator(EconomicGrowthRate)
+Indicator(LongTermTrends)
+
+AbstractModel(Model)
+Model(ARIMA)
+Model(Regression)
+Model(VAR)
+Model(NeuralNetwork)
+Model(LSTM)
+Model(KalmanFilter)
+
+Component(EconomicIndicatorProcessor)
+Component(ModelSelector)
+Component(ExchangeRatePredictor)
+
+EconomicData -- InflationRate
+EconomicData -- InterestRate
+EconomicData -- GDPGrowthRate
+EconomicData -- TradeBalance
+EconomicData -- PurchasingPowerParity
+EconomicData -- EconomicGrowthRate
+EconomicData -- LongTermTrends
+
+ExchangeRates -- ARIMA
+ExchangeRates -- Regression
+ExchangeRates -- VAR
+ExchangeRates -- NeuralNetwork
+ExchangeRates -- LSTM
+ExchangeRates -- KalmanFilter
+
+Model -- AbstractModel
+
+EconomicIndicatorProcessor -- InflationRate
+EconomicIndicatorProcessor -- InterestRate
+EconomicIndicatorProcessor -- GDPGrowthRate
+EconomicIndicatorProcessor -- TradeBalance
+EconomicIndicatorProcessor -- PurchasingPowerParity
+EconomicIndicatorProcessor -- EconomicGrowthRate
+EconomicIndicatorProcessor -- LongTermTrends
+
+ModelSelector -- AbstractModel
+ModelSelector -- ARIMA
+ModelSelector -- Regression
+ModelSelector -- VAR
+ModelSelector -- NeuralNetwork
+ModelSelector -- LSTM
+ModelSelector -- KalmanFilter
+
+ExchangeRatePredictor -- EconomicIndicatorProcessor
+ExchangeRatePredictor -- ModelSelector
+
+@enduml
