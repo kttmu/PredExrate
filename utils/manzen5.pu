@@ -1,0 +1,48 @@
+@startmindmap
+
+!define ICONURL https://www.planttext.com/icons
+skinparam iconSize 80
+
+* 技術的課題
+** 視線データの精度
+*** :fa-eye: カメラ・センサの性能
+*** :fa-laptop: データ処理アルゴリズム
+
+** 特徴量の抽出
+*** :fa-filter: 特徴量抽出アルゴリズム
+*** :fa-chart-line: 有効な特徴量の選定
+
+** 複雑な交通状況への対応
+*** :fa-car-side: 車両外部センサ情報
+*** :fa-road: 交通状況の分析
+
+** リアルタイム性
+*** :fa-stopwatch: 処理速度
+*** :fa-clock: リアルタイム処理
+
+** 交通状況の変動への対応
+*** :fa-random: 交通状況の予測
+*** :fa-cogs: システムの適応性
+
+* 社会的課題
+** プライバシーと個人情報保護
+*** :fa-user-shield: プライバシー対策
+*** :fa-balance-scale: 法的規制と個人情報保護
+
+** 法的規制と責任
+*** :fa-gavel: 漫然運転の法的規制
+*** :fa-users: 事故責任の明確化
+
+** ドライバーの受容性と利用意欲
+*** :fa-user-check: ユーザーの受容性
+*** :fa-user-clock: ドライバーの利用意欲
+
+** システムの信頼性と安全性
+*** :fa-shield-alt: システムの信頼性
+*** :fa-helmet-battle: システムの安全性
+
+** 社会的認知と啓蒙
+*** :fa-info: 啓蒙活動
+*** :fa-comments: 社会的認知の向上
+
+@endmindmap
