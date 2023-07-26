@@ -1,0 +1,24 @@
+@startmindmap
+
+!define ICONURL https://www.planttext.com/icons
+skinparam iconSize 80
+
+* 主要な課題
+** 技術的課題
+*** 漫然運転の特徴の抽出
+**** :fa-car: 車の運転行動
+**** :fa-eye: 目の動き
+**** :fa-location-arrow: ステアリング操作
+*** データ収集と機械学習
+**** :fa-database: データ収集
+**** :fa-cogs: 機械学習アルゴリズム
+
+** 社会的課題
+*** プライバシーと倫理問題
+**** :fa-user-secret: プライバシー侵害
+**** :fa-balance-scale: 倫理的ガイドライン
+*** 法的・法規制上の問題
+**** :fa-gavel: 法的問題
+**** :fa-book: 法規制の検討
+
+@endmindmap
