@@ -25,11 +25,12 @@ def download_economic_indicators(start_date, end_date):
 def preprocess_economic_data(economic_data):
     # 経済指標データを前処理する
     for indicator_name, df in economic_data.items():
+        print(fr"ind:{indicator_name}, df:{df}")
         # 欠損値の補完
         df.fillna(method='ffill', inplace=True)
         df.fillna(method='bfill', inplace=True)
-        # ログ差分を取る
-        df['LogDiff'] = np.log(df['Close']).diff()
+        ## ログ差分を取る
+        #df['LogDiff'] = np.log(df['Close']).diff()
 
     return economic_data
 
